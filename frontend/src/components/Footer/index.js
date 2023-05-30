@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 
-import logo from "./logo.png";
+import logoWhite from "./logo_white.png";
 
 import "./style.css";
 
@@ -13,7 +13,7 @@ const Footer = () => {
             <Container className="footer">
                 <Navbar.Brand className="logo">
                     <img
-                        src={logo}
+                        src={logoWhite}
                         height="50"
                         width="50"
                         alt="Logo"
