@@ -9,25 +9,24 @@ import logo from "./logo.png";
 
 const Header = () => {
     return (
-        <Navbar className="header-navbar" expand="md">
-            <Container className="header-container">
+        <Navbar expand="md">
+            <Container className="header">
                 <Navbar.Brand className="logo">
                     <img
                         src={logo}
                         height="50"
                         width="50"
                         alt="Logo"
-                        className="d-inline-block"
                     />
                 </Navbar.Brand>
 
-                <Nav className="header-navlinks">
+                <Nav className="navlinks">
                     <Nav.Link href="#home" active={false}>Home</Nav.Link>
                     <Nav.Link href="#about" active={false}>About</Nav.Link>
                     <Nav.Link href="#contact" active={false}>Contact</Nav.Link>
                 </Nav>
 
-                <Nav className="header-account">
+                <Nav className="account">
                     <Nav.Link>Sign In</Nav.Link>
                     <Button>Sign Up</Button>
                 </Nav>
