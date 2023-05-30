@@ -1,0 +1,20 @@
+.header-container {
+    justify-content: center;
+}
+
+.logo {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+}
+
+.header-navlinks {
+    flex: 1;
+    justify-content: center;
+}
+
+.header-account {
+    flex: 1;
+    justify-content: flex-end;
+    gap: 5px;
+}

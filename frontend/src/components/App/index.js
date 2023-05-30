@@ -1,7 +1,15 @@
 import React from "react";
 
+import Header from "../Header";
+import Landing from "../Landing";
+
 const App = () => {
-    return <div>App</div>;
+    return (
+        <>
+            <Header />
+            <Landing />
+        </>
+    );
 };
 
 export default App;

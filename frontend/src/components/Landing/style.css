@@ -1,0 +1,77 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    height: 600px;
+}
+
+.main .left {
+    flex: 1;
+}
+
+.main .right {
+    flex: 1;
+    background-image: url("./landing_background.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
+}
+
+.about .text {
+    text-align: center;
+}
+
+.about .images {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+}
+
+.about .images .left, .about .images .right {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
+}
+
+.contact .text {
+    text-align: center;
+}
+
+.contact .methods {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.contact .methods .phone, .contact .methods .email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact .methods .phone .information, .contact .methods .email .information {
+    text-align: center;
+}
