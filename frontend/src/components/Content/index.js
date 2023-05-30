@@ -9,7 +9,7 @@ import stepTwoImage from "./step2.png";
 import phoneImage from "./phone.png";
 import emailImage from "./email.png";
 
-const Landing = () => {
+const Content = () => {
     return (
         <div className="wrapper">
             <Container id="home" className="main">
@@ -73,4 +73,4 @@ const Landing = () => {
     );
 };
 
-export default Landing;
+export default Content;
