@@ -1,16 +1,16 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Header from "../Header";
-import Content from "../Content";
-import Footer from "../Footer";
+import Landing from "../Landing";
+import SignIn from "../SignIn";
 
 const App = () => {
     return (
         <BrowserRouter>
-            <Header />
-            <Content />
-            <Footer />
+            <Routes>
+                <Route path="/" element={<Landing />} />
+                <Route path="/signin" element={<SignIn />} />
+            </Routes>
         </BrowserRouter>
     );
 };

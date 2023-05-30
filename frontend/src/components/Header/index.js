@@ -3,6 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 import "./style.css";
 import logo from "./logo.png";
@@ -27,8 +28,8 @@ const Header = () => {
                 </Nav>
 
                 <Nav className="account">
-                    <Nav.Link>Sign In</Nav.Link>
-                    <Button>Sign Up</Button>
+                    <Link to="/signin" className="btn btn-link">Sign In</Link>
+                    <Link to="/signup" className="btn btn-primary">Sign Up</Link>
                 </Nav>
             </Container>
         </Navbar>
