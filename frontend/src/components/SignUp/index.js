@@ -6,16 +6,36 @@ import { Link } from "react-router-dom";
 
 import "./style.css";
 
-const SignIn = () => {
+const SignUp = () => {
     return (
-        <Container fluid className="signin-containerbox">
+        <Container fluid className="signup-containerbox">
             <div className="cardbox shadow-sm">
                 <div>
-                    <h2>Sign In</h2>
+                    <h2>Sign Up</h2>
                 </div>
 
                 <Form className="formbox">
                     <div className="form-fields">
+                        <Form.Group controlId="first_name">
+                            <Form.Label>First Name</Form.Label>
+                            <Form.Control
+                                name="first_name"
+                                type="text"
+                                autoComplete="none"
+                                placeholder="First Name"
+                            />
+                        </Form.Group>
+
+                        <Form.Group controlId="last_name">
+                            <Form.Label>Last Name</Form.Label>
+                            <Form.Control
+                                name="last_name"
+                                type="text"
+                                autoComplete="none"
+                                placeholder="Last Name"
+                            />
+                        </Form.Group>
+
                         <Form.Group controlId="email">
                             <Form.Label>E-mail</Form.Label>
                             <Form.Control
@@ -36,6 +56,16 @@ const SignIn = () => {
                             />
                         </Form.Group>
 
+                        <Form.Group controlId="confirm_password">
+                            <Form.Label>Confirm Password</Form.Label>
+                            <Form.Control
+                                name="confirm_password"
+                                type="password"
+                                autoComplete="none"
+                                placeholder="Confirm Password"
+                            />
+                        </Form.Group>
+
                         <Form.Group controlId="remember_me">
                             <Form.Check
                                 name="remember_me"
@@ -48,8 +78,7 @@ const SignIn = () => {
                     </div>
 
                     <div className="links">
-                        <p>Don't have an account? <Link to="/signup">Create one</Link>.</p>
-                        <p>Are you an owner / worker? <Link to="/signin-water">Sign in here</Link>.</p>
+                        <p>Already have an account? <Link to="/signin">Sign in here</Link>.</p>
                     </div>
                 </Form>
             </div>
@@ -57,4 +86,4 @@ const SignIn = () => {
     )
 };
 
-export default SignIn;
+export default SignUp;

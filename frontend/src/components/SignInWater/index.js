@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 
 import "./style.css";
 
-const SignIn = () => {
+const SignInWater = () => {
     return (
-        <Container fluid className="containerbox">
+        <Container fluid className="signin-water-containerbox">
             <div className="cardbox shadow-sm">
                 <div>
-                    <h2>Sign In</h2>
+                    <h2>Sign In (Water Station)</h2>
                 </div>
 
                 <Form className="formbox">
@@ -58,7 +58,6 @@ const SignIn = () => {
                     </div>
 
                     <div className="links">
-                        <p>Don't have an account? <Link to="/signup">Create one</Link>.</p>
                         <p>Regular user? <Link to="/signin">Sign in here</Link>.</p>
                     </div>
                 </Form>
@@ -67,4 +66,4 @@ const SignIn = () => {
     )
 };
 
-export default SignIn;
+export default SignInWater;

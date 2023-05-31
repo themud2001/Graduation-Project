@@ -1,4 +1,4 @@
-.signin-water-containerbox {
+.signup-containerbox {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,7 +6,7 @@
     background-color: #EEE;
 }
 
-.signin-water-containerbox .cardbox {
+.signup-containerbox .cardbox {
     display: flex;
     margin-top: 15vh;
     margin-bottom: 15vh;
@@ -18,26 +18,26 @@
     padding: 30px;
 }
 
-.signin-water-containerbox .formbox {
+.signup-containerbox .formbox {
     display: flex;
     width: 100%;
     flex-direction: column;
     gap: 30px;
 }
 
-.signin-water-containerbox .formbox .form-fields {
+.signup-containerbox .formbox .form-fields {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.signin-water-containerbox .formbox .links {
+.signup-containerbox .formbox .links {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.signin-water-containerbox .formbox .links p {
+.signup-containerbox .formbox .links p {
     margin: 3px;
     font-size: 14px;
 }
