@@ -23,27 +23,27 @@ const Footer = () => {
                                 alt="Logo"
                             />
 
-                            <h5>Water Delivery</h5>
+                            <h5>{process.env.REACT_APP_ORG_NAME}</h5>
                         </Navbar.Brand>
                     </Col>
 
                     <Col md={4} sm={12}>
                         <div className="copyright">
-                            <p>Copyright &copy; {new Date().getFullYear()} Water Delivery. All rights reserved.</p>
-                            <p>Jordan, Amman, Al-Madina Street</p>
+                            <p>Copyright &copy; {new Date().getFullYear()} {process.env.REACT_APP_ORG_NAME}. All rights reserved.</p>
+                            <p>{process.env.REACT_APP_ORG_ADDRESS}</p>
                         </div>
                     </Col>
 
                     <Col md={4} sm={12} className="social-links">
-                        <Nav.Link href="https://facebook.com" target="_blank" active={false}>
+                        <Nav.Link href={process.env.REACT_APP_ORG_FACEBOOK} target="_blank" active={false}>
                             <i className="bi bi-facebook" />
                         </Nav.Link>
                     
-                        <Nav.Link href="https://twitter.com" target="_blank" active={false}>
+                        <Nav.Link href={process.env.REACT_APP_ORG_TWITTER} target="_blank" active={false}>
                             <i className="bi bi-twitter" />
                         </Nav.Link>
                     
-                        <Nav.Link href="https://www.instagram.com" target="_blank" active={false}>
+                        <Nav.Link href={process.env.REACT_APP_ORG_INSTAGRAM} target="_blank" active={false}>
                             <i className="bi bi-instagram" />
                         </Nav.Link>
                     </Col>

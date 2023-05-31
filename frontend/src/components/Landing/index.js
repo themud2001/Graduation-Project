@@ -70,7 +70,7 @@ const Landing = () => {
 
                                 <div className="information">
                                     <h4>By Phone</h4>
-                                    <p>+962 1 2345 6789</p>
+                                    <p>{process.env.REACT_APP_ORG_PHONE}</p>
                                 </div>
                             </Col>
 
@@ -79,7 +79,7 @@ const Landing = () => {
 
                                 <div className="information">
                                     <h4>By E-mail</h4>
-                                    <p>test@gmail.com</p>
+                                    <p>{process.env.REACT_APP_ORG_EMAIL}</p>
                                 </div>
                             </Col>
 
@@ -88,7 +88,7 @@ const Landing = () => {
 
                                 <div className="information">
                                     <h4>By Address</h4>
-                                    <p>Jordan, Amman, Al-Madina Street</p>
+                                    <p>{process.env.REACT_APP_ORG_ADDRESS}</p>
                                 </div>
                             </Col>
                         </Row>

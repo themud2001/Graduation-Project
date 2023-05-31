@@ -27,9 +27,9 @@ const Header = () => {
 
                 <Navbar.Collapse>
                     <Nav className="navlinks">
-                        <HashLink smooth to="/" active={false}>Home</HashLink>
-                        <HashLink smooth to="/#about" active={false}>About</HashLink>
-                        <HashLink smooth to="/#contact" active={false}>Contact</HashLink>
+                        <HashLink smooth to="/#home" active="false">Home</HashLink>
+                        <HashLink smooth to="/#about" active="false">About</HashLink>
+                        <HashLink smooth to="/#contact" active="false">Contact</HashLink>
                     </Nav>
 
                     <Nav className="account">

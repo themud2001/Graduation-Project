@@ -3,10 +3,20 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import { useSignInMutation } from "../../store";
 
 import "./style.css";
 
 const SignIn = () => {
+    const { register, reset, handleSubmit, formState: { errors } } = useForm();
+    const [signIn, { isSuccess, isLoading, isError, error }] = useSignInMutation();
+
+    const handleFormOnSubmit = formData => {
+        signIn(formData);
+        reset();
+    };
+
     return (
         <Container fluid className="signin-containerbox">
             <div className="cardbox shadow-sm">
@@ -14,33 +24,40 @@ const SignIn = () => {
                     <h2>Sign In</h2>
                 </div>
 
-                <Form className="formbox">
+                <Form className="formbox" onSubmit={handleSubmit(handleFormOnSubmit)}>
                     <div className="form-fields">
                         <Form.Group controlId="email">
                             <Form.Label>E-mail</Form.Label>
                             <Form.Control
-                                name="email"
                                 type="text"
                                 autoComplete="none"
                                 placeholder="E-mail"
+                                isInvalid={errors.email}
+                                {...register("email", {
+                                    required: true,
+                                    pattern: {
+                                        value: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+                                    }
+                                })}
                             />
                         </Form.Group>
 
                         <Form.Group controlId="password">
                             <Form.Label>Password</Form.Label>
                             <Form.Control
-                                name="password"
                                 type="password"
                                 autoComplete="none"
                                 placeholder="Password"
+                                isInvalid={errors.password}
+                                {...register("password", { required: true })}
                             />
                         </Form.Group>
 
                         <Form.Group controlId="remember_me">
                             <Form.Check
-                                name="remember_me"
                                 type="checkbox"
                                 label="Remember Me?"
+                                {...register("remember_me")}
                             />
                         </Form.Group>
                         
