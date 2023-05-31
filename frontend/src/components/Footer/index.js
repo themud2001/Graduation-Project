@@ -22,6 +22,11 @@ const Footer = () => {
                     <h4>Water Delivery</h4>
                 </Navbar.Brand>
 
+                <div className="copyright">
+                    <p>Copyright &copy; {new Date().getFullYear()} Water Delivery. All rights reserved.</p>
+                    <p>Jordan, Amman, Al-Madina Street</p>
+                </div>
+
                 <Nav className="social-links">
                     <Nav.Link href="https://facebook.com" target="_blank" active={false}>
                         <i className="bi bi-facebook" />

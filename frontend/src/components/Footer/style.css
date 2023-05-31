@@ -5,9 +5,23 @@
 .footer .logo {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 25px;
+    color: #FFF;
+}
+
+.footer .copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    color: #FFF;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .copyright a {
     color: #FFF;
 }
 
@@ -15,6 +29,11 @@
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     font-size: 22px;
     gap: 15px;
+}
+
+.footer .social-links i {
+    color: #FFF;
 }

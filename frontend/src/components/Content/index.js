@@ -6,8 +6,10 @@ import "./style.css";
 
 import stepOneImage from "./step1.png";
 import stepTwoImage from "./step2.png";
+import stepThreeImage from "./step3.png";
 import phoneImage from "./phone.png";
 import emailImage from "./email.png";
+import addressImage from "./address.png";
 
 const Content = () => {
     return (
@@ -31,13 +33,18 @@ const Content = () => {
                 </div>
 
                 <div className="images">
-                    <div className="left">
+                    <div className="step1">
                         <img src={stepOneImage} width="300" height="300" alt="Step" />
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales pellentesque tristique. Morbi ullamcorper sodales leo.</p>
                     </div>
                     
-                    <div className="right">
+                    <div className="step2">
                         <img src={stepTwoImage} width="300" height="300" alt="Step" />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales pellentesque tristique. Morbi ullamcorper sodales leo.</p>
+                    </div>
+
+                    <div className="step3">
+                        <img src={stepThreeImage} width="300" height="300" alt="Step" />
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales pellentesque tristique. Morbi ullamcorper sodales leo.</p>
                     </div>
                 </div>
@@ -65,6 +72,15 @@ const Content = () => {
                         <div className="information">
                             <h4>By E-mail</h4>
                             <p>test@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div className="address">
+                        <img src={addressImage} height="100" width="100" alt="Address" />
+
+                        <div className="information">
+                            <h4>By Address</h4>
+                            <p>Jordan, Amman, Al-Madina Street</p>
                         </div>
                     </div>
                 </div>
