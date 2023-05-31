@@ -1,22 +1,36 @@
-.header {
+.headerbox {
+    background-color: #FFF;
+    border-bottom: 1px solid #DDD;
+}
+
+.headerbox .header {
     display: flex;
 }
 
-.header .logo {
+.headerbox .header .logo {
     display: flex;
     flex: 1;
     justify-content: flex-start;
 }
 
-.header .navlinks {
+.headerbox .header .navlinks {
     display: flex;
     flex: 1;
     justify-content: center;
     gap: 50px;
 }
 
-.header .account {
+.headerbox .header .navlinks a {
+    color: #AAA;
+    text-decoration: none;
+}
+
+.headerbox .header .account {
     flex: 1;
     justify-content: flex-end;
     gap: 5px;
+}
+
+.headerbox .header .account .sign-in {
+    text-decoration: none;
 }

@@ -16,6 +16,16 @@ const SignIn = () => {
 
                 <Form className="formbox">
                     <div className="form-fields">
+                        <Form.Group controlId="water_station">
+                            <Form.Label>Water Station Name</Form.Label>
+                            <Form.Control
+                                name="water_station"
+                                type="text"
+                                autoComplete="none"
+                                placeholder="Water Station Name"
+                            />
+                        </Form.Group>
+
                         <Form.Group controlId="email">
                             <Form.Label>E-mail</Form.Label>
                             <Form.Control
@@ -49,7 +59,7 @@ const SignIn = () => {
 
                     <div className="links">
                         <p>Don't have an account? <Link to="/signup">Create one</Link>.</p>
-                        <p>Are you an owner / worker? <Link to="/signin-water">Sign in here</Link>.</p>
+                        <p>Regular user? <Link to="/signin">Sign in here</Link>.</p>
                     </div>
                 </Form>
             </div>

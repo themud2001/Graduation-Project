@@ -60,18 +60,11 @@
     text-align: center;
 }
 
-.contact .methods {
-    display: flex;
-    justify-content: space-evenly;
-    width: 60%;
-}
-
 .contact .methods .phone, .contact .methods .email, .contact .methods .address {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
-    flex: 1;
+    gap: 25px;
 }
 
 .contact .methods .phone .information, .contact .methods .email .information, .contact .methods .address .information {

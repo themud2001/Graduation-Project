@@ -1,0 +1,38 @@
+.containerbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #EEE;
+}
+
+.containerbox .cardbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background-color: #FFF;
+    padding: 30px;
+}
+
+.containerbox .formbox {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.containerbox .formbox .form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.containerbox .formbox .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerbox .formbox .links p {
+    margin: 3px;
+}
