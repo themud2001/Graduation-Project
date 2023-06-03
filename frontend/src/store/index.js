@@ -4,7 +4,6 @@ import { setupListeners } from "@reduxjs/toolkit/query";
 import {
     authApi,
     useSignInMutation,
-    useSignInWaterMutation,
     useSignUpMutation
 } from "./apis/authApi";
 
@@ -23,6 +22,5 @@ setupListeners(store.dispatch);
 export {
     store,
     useSignInMutation,
-    useSignInWaterMutation,
     useSignUpMutation
 };

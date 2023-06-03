@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
+
 import { useSignUpMutation } from "../../store";
 
 import "./style.css";
@@ -11,10 +13,22 @@ import "./style.css";
 const SignUp = () => {
     const { register, reset, handleSubmit, formState: { errors } } = useForm();
     const [signUp, { isSuccess, isLoading, isError, error }] = useSignUpMutation();
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (isSuccess) {
+            toast.success("Successfully signed up!");
+            reset();
+            navigate("/");
+        }
+
+        if (isError) {
+            toast.error(...error.data.errorMessage);
+        }
+    }, [isSuccess, isLoading, isError, error]);
 
     const handleFormOnSubmit = formData => {
         signUp(formData);
-        reset();
     };
 
     return (
@@ -32,7 +46,7 @@ const SignUp = () => {
                                 type="text"
                                 size="sm"
                                 autoComplete="none"
-                                isInvalid={errors.first_name}
+                                isInvalid={errors.firstName}
                                 {...register("firstName", { required: true })}
                             />
                         </Form.Group>
@@ -43,7 +57,7 @@ const SignUp = () => {
                                 type="text"
                                 size="sm"
                                 autoComplete="none"
-                                isInvalid={errors.last_name}
+                                isInvalid={errors.lastName}
                                 {...register("lastName", { required: true })}
                             />
                         </Form.Group>
@@ -64,6 +78,17 @@ const SignUp = () => {
                             />
                         </Form.Group>
 
+                        <Form.Group controlId="phoneNumber">
+                            <Form.Label>Phone Number</Form.Label>
+                            <Form.Control
+                                type="text"
+                                size="sm"
+                                autoComplete="none"
+                                isInvalid={errors.phoneNumber}
+                                {...register("phoneNumber", { required: true })}
+                            />
+                        </Form.Group>
+
                         <Form.Group controlId="password">
                             <Form.Label>Password</Form.Label>
                             <Form.Control
@@ -71,7 +96,7 @@ const SignUp = () => {
                                 size="sm"
                                 autoComplete="none"
                                 isInvalid={errors.password}
-                                {...register("password", { required: true })}
+                                {...register("password", { required: true, minLength: 6 })}
                             />
                         </Form.Group>
 
@@ -81,12 +106,12 @@ const SignUp = () => {
                                 type="password"
                                 size="sm"
                                 autoComplete="none"
-                                isInvalid={errors.confirm_password}
+                                isInvalid={errors.confirmPassword}
                                 {...register("confirmPassword", { required: true })}
                             />
                         </Form.Group>
                         
-                        <Button size="sm" type="submit">Sign Up</Button>
+                        <Button disabled={isLoading} size="sm" type="submit">Sign Up</Button>
                     </div>
                 </Form>
 

@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
+
 import { useSignInMutation } from "../../store";
 
 import "./style.css";
@@ -11,10 +13,22 @@ import "./style.css";
 const SignIn = () => {
     const { register, reset, handleSubmit, formState: { errors } } = useForm();
     const [signIn, { isSuccess, isLoading, isError, error }] = useSignInMutation();
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (isSuccess) {
+            toast.success("Successfully signed in!");
+            reset();
+            navigate("/");
+        }
+
+        if (isError) {
+            toast.error(...error.data.errorMessage);
+        }
+    }, [isSuccess, isLoading, isError, error]);
 
     const handleFormOnSubmit = formData => {
         signIn(formData);
-        reset();
     };
 
     return (
@@ -61,7 +75,7 @@ const SignIn = () => {
                             />
                         </Form.Group>
                         
-                        <Button size="sm" type="submit">Sign In</Button>
+                        <Button disabled={isLoading} size="sm" type="submit">Sign In</Button>
                     </div>
                 </Form>
 

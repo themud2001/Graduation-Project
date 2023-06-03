@@ -16,15 +16,6 @@ const authApi = createApi({
                     }
                 }
             }),
-            signInWater: builder.mutation({
-                query: formData => {
-                    return {
-                        url: "/signin-water",
-                        method: "POST",
-                        body: formData
-                    }
-                }
-            }),
             signUp: builder.mutation({
                 query: formData => {
                     return {
@@ -40,7 +31,6 @@ const authApi = createApi({
 
 export const {
     useSignInMutation,
-    useSignInWaterMutation,
     useSignUpMutation
 } = authApi;
 export { authApi };
