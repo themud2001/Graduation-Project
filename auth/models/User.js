@@ -1,5 +1,4 @@
 const { DataTypes } = require("sequelize");
-
 const { sequelize } = require("../config/db");
 
 const User = sequelize.define("users", {
@@ -18,7 +17,8 @@ const User = sequelize.define("users", {
     },
     email: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: false,
+        unique: true
     },
     phoneNumber: {
         type: DataTypes.STRING,
