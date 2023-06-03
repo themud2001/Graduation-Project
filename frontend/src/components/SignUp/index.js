@@ -26,25 +26,25 @@ const SignUp = () => {
 
                 <Form className="formbox" onSubmit={handleSubmit(handleFormOnSubmit)}>
                     <div className="form-fields">
-                        <Form.Group controlId="first_name">
+                        <Form.Group controlId="firstName">
                             <Form.Label>First Name</Form.Label>
                             <Form.Control
                                 type="text"
                                 autoComplete="none"
                                 placeholder="First Name"
                                 isInvalid={errors.first_name}
-                                {...register("first_name", { required: true })}
+                                {...register("firstName", { required: true })}
                             />
                         </Form.Group>
 
-                        <Form.Group controlId="last_name">
+                        <Form.Group controlId="lastName">
                             <Form.Label>Last Name</Form.Label>
                             <Form.Control
                                 type="text"
                                 autoComplete="none"
                                 placeholder="Last Name"
                                 isInvalid={errors.last_name}
-                                {...register("last_name", { required: true })}
+                                {...register("lastName", { required: true })}
                             />
                         </Form.Group>
 
@@ -75,14 +75,14 @@ const SignUp = () => {
                             />
                         </Form.Group>
 
-                        <Form.Group controlId="confirm_password">
+                        <Form.Group controlId="confirmPassword">
                             <Form.Label>Confirm Password</Form.Label>
                             <Form.Control
                                 type="password"
                                 autoComplete="none"
                                 placeholder="Confirm Password"
                                 isInvalid={errors.confirm_password}
-                                {...register("confirm_password", { required: true })}
+                                {...register("confirmPassword", { required: true })}
                             />
                         </Form.Group>
                         

@@ -53,11 +53,11 @@ const SignIn = () => {
                             />
                         </Form.Group>
 
-                        <Form.Group controlId="remember_me">
+                        <Form.Group controlId="rememberMe">
                             <Form.Check
                                 type="checkbox"
                                 label="Remember Me?"
-                                {...register("remember_me")}
+                                {...register("rememberMe")}
                             />
                         </Form.Group>
                         
