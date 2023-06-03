@@ -1,0 +1,202 @@
+[2023-06-02 19:38:29] info: Server is listening on port 8080
+[2023-06-02 19:38:29] info: logs/info
+[2023-06-02 19:39:07] info: Server is listening on port 8080
+[2023-06-02 19:39:07] info: logs/info
+[2023-06-02 19:41:35] info: Server is listening on port 8080
+[2023-06-02 19:41:35] info: logs/info
+[2023-06-02 19:41:39] info: Server is listening on port 8080
+[2023-06-02 19:41:39] info: logs/info
+[2023-06-02 19:43:20] info: Server is listening on port 8080
+[2023-06-02 19:43:20] info: logs/info
+[2023-06-02 19:44:26] info: Server is listening on port 8080
+[2023-06-02 19:44:26] info: logs/info
+[2023-06-02 19:44:30] info: Server is listening on port 8080
+[2023-06-02 19:44:30] info: logs/info
+[2023-06-02 19:44:46] info: Server is listening on port 8080
+[2023-06-02 19:48:43] info: Server is listening on port 8080
+[2023-06-02 19:51:26] info: Server is listening on port 8080
+[2023-06-02 19:51:49] info: Server is listening on port 8080
+[2023-06-02 19:52:34] info: Server is listening on port 8080
+[2023-06-02 19:52:36] info: Server is listening on port 8080
+[2023-06-02 19:52:54] info: Server is listening on port 8080
+[2023-06-02 19:52:59] info: Server is listening on port 8080
+[2023-06-02 19:53:47] info: Server is listening on port 8080
+[2023-06-02 19:55:43] info: Server is listening on port 8080
+[2023-06-02 19:55:43] error: Unable to connect to the database
+[2023-06-02 19:55:43] error: Access denied for user ''@'localhost' (using password: NO)
+[2023-06-02 19:56:20] info: Server is listening on port 8080
+[2023-06-02 19:56:20] error: Unable to connect to the database
+[2023-06-02 19:56:20] error: Access denied for user ''@'localhost' (using password: NO)
+[2023-06-02 19:58:22] info: Server is listening on port 8080
+[2023-06-02 19:58:22] info: Database connection has ben established successfully
+[2023-06-02 20:36:13] info: Server is listening on port 8080
+[2023-06-02 20:36:13] info: Database connection has ben established successfully
+[2023-06-02 20:36:35] info: Server is listening on port 8080
+[2023-06-02 20:36:35] info: Database connection has ben established successfully
+[2023-06-02 20:37:28] info: Server is listening on port 8080
+[2023-06-02 20:37:28] info: Database connection has ben established successfully
+[2023-06-02 20:37:31] info: Server is listening on port 8080
+[2023-06-02 20:37:31] info: Database connection has ben established successfully
+[2023-06-02 20:37:52] info: Server is listening on port 8080
+[2023-06-02 20:37:52] info: Database connection has ben established successfully
+[2023-06-02 20:38:22] info: Server is listening on port 8080
+[2023-06-02 20:38:22] info: Database connection has ben established successfully
+[2023-06-02 20:38:38] info: Server is listening on port 8080
+[2023-06-02 20:38:38] info: Database connection has ben established successfully
+[2023-06-02 21:14:58] error: Server is listening on port 8080
+[2023-06-02 21:14:58] info: Database connection has ben established successfully
+[2023-06-02 21:15:31] info: Server is listening on port 8080
+[2023-06-02 21:15:31] info: Database connection has ben established successfully
+[2023-06-02 21:17:26] info: Server is listening on port 8080
+[2023-06-02 21:17:26] info: Database connection has ben established successfully
+[2023-06-02 21:17:42] info: Server is listening on port 8080
+[2023-06-02 21:17:42] info: Database connection has ben established successfully
+[2023-06-02 21:18:49] info: Server is listening on port 8080
+[2023-06-02 21:18:49] info: Database connection has ben established successfully
+[2023-06-02 21:19:32] info: Server is listening on port 8080
+[2023-06-02 21:19:32] info: Database connection has ben established successfully
+[2023-06-02 21:21:21] info: Server is listening on port 8080
+[2023-06-02 21:21:21] info: Database connection has ben established successfully
+[2023-06-02 21:34:44] info: Server is listening on port 8080
+[2023-06-02 21:34:44] info: Database connection has ben established successfully
+[2023-06-02 21:57:11] info: Server is listening on port 8080
+[2023-06-02 21:57:11] info: Database connection has ben established successfully
+[2023-06-02 22:37:58] info: Server is listening on port 8080
+[2023-06-02 22:37:58] info: Database connection has ben established successfully
+[2023-06-02 22:42:06] info: Server is listening on port 8080
+[2023-06-02 22:42:06] info: Database connection has ben established successfully
+[2023-06-02 22:42:10] info: Server is listening on port 8080
+[2023-06-02 22:42:10] info: Database connection has ben established successfully
+[2023-06-02 22:50:00] info: Server is listening on port 8080
+[2023-06-02 22:50:00] info: Database connection has ben established successfully
+[2023-06-02 22:50:26] info: Server is listening on port 8080
+[2023-06-02 22:50:26] info: Database connection has ben established successfully
+[2023-06-02 22:50:26] info: Database has been synchronized
+[2023-06-02 22:50:38] info: Server is listening on port 8080
+[2023-06-02 22:50:38] info: Database connection has ben established successfully
+[2023-06-02 22:50:58] info: Server is listening on port 8080
+[2023-06-02 22:50:58] info: Database connection has ben established successfully
+[2023-06-02 22:51:23] info: Server is listening on port 8080
+[2023-06-02 22:51:23] info: Database connection has ben established successfully
+[2023-06-02 22:51:38] info: Server is listening on port 8080
+[2023-06-02 22:51:38] info: Database connection has ben established successfully
+[2023-06-02 22:51:46] info: Server is listening on port 8080
+[2023-06-02 22:51:46] info: Database connection has ben established successfully
+[2023-06-02 23:02:48] info: Server is listening on port 8080
+[2023-06-02 23:02:49] info: Database connection has ben established successfully
+[2023-06-02 23:02:49] info: Synchronized the database!
+[2023-06-02 23:06:29] info: Server is listening on port 8080
+[2023-06-02 23:06:29] info: Database connection has ben established successfully
+[2023-06-02 23:06:29] info: Synchronized the database!
+[2023-06-02 23:08:54] info: Server is listening on port 8080
+[2023-06-02 23:08:54] info: Database connection has ben established successfully
+[2023-06-02 23:08:54] info: Synchronized the database!
+[2023-06-02 23:10:30] info: Server is listening on port 8080
+[2023-06-02 23:10:30] info: Database connection has ben established successfully
+[2023-06-02 23:10:30] info: Synchronized the database!
+[2023-06-02 23:10:56] info: Server is listening on port 8080
+[2023-06-02 23:10:56] info: Database connection has ben established successfully
+[2023-06-02 23:10:56] info: Synchronized the database!
+[2023-06-02 23:38:48] info: Server is listening on port 8080
+[2023-06-02 23:38:48] info: Database connection has ben established successfully
+[2023-06-02 23:38:48] info: Synchronized the database!
+[2023-06-02 23:39:13] info: Server is listening on port 8080
+[2023-06-02 23:39:13] info: Database connection has ben established successfully
+[2023-06-02 23:39:13] info: Synchronized the database!
+[2023-06-02 23:39:28] info: Server is listening on port 8080
+[2023-06-02 23:39:28] info: Database connection has ben established successfully
+[2023-06-02 23:39:28] info: Synchronized the database!
+[2023-06-02 23:41:08] info: Server is listening on port 8080
+[2023-06-02 23:41:08] info: Database connection has ben established successfully
+[2023-06-02 23:41:08] info: Synchronized the database!
+[2023-06-02 23:41:47] info: Server is listening on port 8080
+[2023-06-02 23:41:47] info: Database connection has ben established successfully
+[2023-06-02 23:41:47] info: Synchronized the database!
+[2023-06-02 23:41:49] info: Server is listening on port 8080
+[2023-06-02 23:41:49] info: Database connection has ben established successfully
+[2023-06-02 23:41:49] info: Synchronized the database!
+[2023-06-02 23:42:37] info: Server is listening on port 8080
+[2023-06-02 23:42:37] info: Database connection has ben established successfully
+[2023-06-02 23:42:37] info: Synchronized the database!
+[2023-06-02 23:42:37] error: Failed to synchronize: 
+[2023-06-02 23:42:37] error: Cannot read properties of undefined (reading 'name')
+[2023-06-02 23:44:02] info: Server is listening on port 8080
+[2023-06-02 23:44:02] info: Database connection has ben established successfully
+[2023-06-02 23:44:02] info: Synchronized the database!
+[2023-06-02 23:44:02] error: Failed to synchronize: 
+[2023-06-02 23:44:02] error: Cannot read properties of undefined (reading 'name')
+[2023-06-02 23:44:41] info: Server is listening on port 8080
+[2023-06-02 23:44:41] info: Database connection has ben established successfully
+[2023-06-02 23:44:42] info: Synchronized the database!
+[2023-06-02 23:44:47] info: Server is listening on port 8080
+[2023-06-02 23:44:47] info: Database connection has ben established successfully
+[2023-06-02 23:44:47] info: Synchronized the database!
+[2023-06-02 23:44:54] info: Server is listening on port 8080
+[2023-06-02 23:44:54] info: Database connection has ben established successfully
+[2023-06-02 23:44:54] info: Synchronized the database!
+[2023-06-02 23:45:07] info: Server is listening on port 8080
+[2023-06-02 23:45:07] info: Database connection has ben established successfully
+[2023-06-02 23:45:08] info: Synchronized the database!
+[2023-06-02 23:45:11] info: Server is listening on port 8080
+[2023-06-02 23:45:11] info: Database connection has ben established successfully
+[2023-06-02 23:45:11] info: Synchronized the database!
+[2023-06-02 23:45:54] info: Server is listening on port 8080
+[2023-06-02 23:45:54] info: Database connection has ben established successfully
+[2023-06-02 23:45:54] info: Synchronized the database!
+[2023-06-02 23:46:14] info: Server is listening on port 8080
+[2023-06-02 23:46:15] info: Database connection has ben established successfully
+[2023-06-02 23:46:15] info: Synchronized the database!
+[2023-06-02 23:49:01] info: Server is listening on port 8080
+[2023-06-02 23:49:01] info: Database connection has ben established successfully
+[2023-06-02 23:49:01] info: Synchronized the database!
+[2023-06-02 23:49:01] error: Failed to synchronize: 
+[2023-06-02 23:49:01] error: qeruan is not defined
+[2023-06-02 23:49:22] info: Server is listening on port 8080
+[2023-06-02 23:49:22] info: Database connection has ben established successfully
+[2023-06-02 23:49:22] info: Synchronized the database!
+[2023-06-02 23:49:22] error: Failed to synchronize: 
+[2023-06-02 23:49:22] error: Cannot read properties of undefined (reading 'name')
+[2023-06-02 23:51:11] info: Server is listening on port 8080
+[2023-06-02 23:51:11] info: Database connection has ben established successfully
+[2023-06-02 23:51:11] info: Synchronized the database!
+[2023-06-02 23:51:11] error: Failed to synchronize: 
+[2023-06-02 23:51:11] error: Cannot read properties of undefined (reading 'name')
+[2023-06-02 23:51:19] info: Server is listening on port 8080
+[2023-06-02 23:51:19] info: Database connection has ben established successfully
+[2023-06-02 23:51:19] info: Synchronized the database!
+[2023-06-02 23:51:19] error: Failed to synchronize: 
+[2023-06-02 23:51:19] error: Cannot read properties of undefined (reading 'name')
+[2023-06-02 23:51:29] info: Server is listening on port 8080
+[2023-06-02 23:51:29] info: Database connection has ben established successfully
+[2023-06-02 23:51:29] info: Synchronized the database!
+[2023-06-02 23:51:47] info: Server is listening on port 8080
+[2023-06-02 23:51:47] info: Database connection has ben established successfully
+[2023-06-02 23:51:47] info: Synchronized the database!
+[2023-06-02 23:51:47] error: Failed to synchronize: 
+[2023-06-02 23:51:47] error: Cannot read properties of undefined (reading 'name')
+[2023-06-02 23:51:57] info: Server is listening on port 8080
+[2023-06-02 23:51:57] info: Database connection has ben established successfully
+[2023-06-02 23:51:57] info: Synchronized the database!
+[2023-06-02 23:52:14] info: Server is listening on port 8080
+[2023-06-02 23:52:14] info: Database connection has ben established successfully
+[2023-06-02 23:52:14] info: Synchronized the database!
+[2023-06-02 23:52:14] error: Failed to synchronize: 
+[2023-06-02 23:52:14] error: Association with alias "WaterStation" does not exist on users
+[2023-06-02 23:52:22] info: Server is listening on port 8080
+[2023-06-02 23:52:22] info: Database connection has ben established successfully
+[2023-06-02 23:52:22] info: Synchronized the database!
+[2023-06-02 23:52:28] info: Server is listening on port 8080
+[2023-06-02 23:52:28] info: Database connection has ben established successfully
+[2023-06-02 23:52:28] info: Synchronized the database!
+[2023-06-02 23:52:37] info: Server is listening on port 8080
+[2023-06-02 23:52:37] info: Database connection has ben established successfully
+[2023-06-02 23:52:37] info: Synchronized the database!
+[2023-06-02 23:52:42] info: Server is listening on port 8080
+[2023-06-02 23:52:42] info: Database connection has ben established successfully
+[2023-06-02 23:52:42] info: Synchronized the database!
+[2023-06-02 23:58:20] info: Server is listening on port 8080
+[2023-06-02 23:58:20] info: Database connection has ben established successfully
+[2023-06-02 23:58:20] info: Synchronized the database!
+[2023-06-02 23:58:22] info: Server is listening on port 8080
+[2023-06-02 23:58:22] info: Database connection has ben established successfully
+[2023-06-02 23:58:22] info: Synchronized the database!
