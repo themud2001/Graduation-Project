@@ -1,6 +1,7 @@
 .headerbox {
     background-color: #FFF;
     border-bottom: 1px solid #DDD;
+    padding: 0;
 }
 
 .headerbox .header {

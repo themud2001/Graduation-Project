@@ -19,14 +19,14 @@ const Landing = () => {
     return (
         <>
             <div className="wrapper">
-                <Container id="home" className="main">
-                    <div className="left">
-                        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <Button>Order Now</Button>
-                    </div>
-
-                    <div className="right"></div>
+                <Container fluid className="mainbox">
+                    <Container id="home" className="main">
+                        <div className="home-text">
+                            <h1><span className="text-primary">Lorem ipsum dolor</span> sit amet, consectetur adipiscing elit</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <Button>Order Now</Button>
+                        </div>
+                    </Container>
                 </Container>
 
                 <Container id="about" className="about">
@@ -40,17 +40,17 @@ const Landing = () => {
                     <Container>
                         <Row className="images">
                             <Col className="step1">
-                                <img src={stepOneImage} alt="Step" />
+                                <img src={stepOneImage} height="300" alt="Step" />
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales pellentesque tristique. Morbi ullamcorper sodales leo.</p>
                             </Col>
                             
                             <Col className="step2">
-                                <img src={stepTwoImage} alt="Step" />
+                                <img src={stepTwoImage} height="300" alt="Step" />
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales pellentesque tristique. Morbi ullamcorper sodales leo.</p>
                             </Col>
 
                             <Col className="step3">
-                                <img src={stepThreeImage} alt="Step" />
+                                <img src={stepThreeImage} height="300" alt="Step" />
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales pellentesque tristique. Morbi ullamcorper sodales leo.</p>
                             </Col>
                         </Row>
@@ -66,28 +66,28 @@ const Landing = () => {
                     <Container>
                         <Row className="methods">
                             <Col md={4} xs={12} className="phone">
-                                <img src={phoneImage} height="100" width="100" alt="Phone" />
+                                <img src={phoneImage} height="180" alt="Phone" />
 
                                 <div className="information">
-                                    <h4>By Phone</h4>
+                                    <h4>Phone</h4>
                                     <p>{process.env.REACT_APP_ORG_PHONE}</p>
                                 </div>
                             </Col>
 
                             <Col md={4} xs={12} className="email">
-                                <img src={emailImage} height="100" width="100" alt="E-mail" />
+                                <img src={emailImage} height="180" alt="E-mail" />
 
                                 <div className="information">
-                                    <h4>By E-mail</h4>
+                                    <h4>E-mail</h4>
                                     <p>{process.env.REACT_APP_ORG_EMAIL}</p>
                                 </div>
                             </Col>
 
                             <Col md={4} xs={12} className="address">
-                                <img src={addressImage} height="100" width="100" alt="Address" />
+                                <img src={addressImage} height="180" alt="Address" />
 
                                 <div className="information">
-                                    <h4>By Address</h4>
+                                    <h4>Address</h4>
                                     <p>{process.env.REACT_APP_ORG_ADDRESS}</p>
                                 </div>
                             </Col>

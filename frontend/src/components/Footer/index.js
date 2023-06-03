@@ -18,8 +18,7 @@ const Footer = () => {
                         <Navbar.Brand className="logo">
                             <img
                                 src={logoWhite}
-                                height="50"
-                                width="50"
+                                height="60"
                                 alt="Logo"
                             />
 

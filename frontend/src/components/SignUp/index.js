@@ -19,7 +19,7 @@ const SignUp = () => {
 
     return (
         <Container fluid className="signup-containerbox">
-            <div className="cardbox shadow-sm">
+            <div className="cardbox shadow">
                 <div>
                     <h2>Sign Up</h2>
                 </div>
@@ -30,8 +30,8 @@ const SignUp = () => {
                             <Form.Label>First Name</Form.Label>
                             <Form.Control
                                 type="text"
+                                size="sm"
                                 autoComplete="none"
-                                placeholder="First Name"
                                 isInvalid={errors.first_name}
                                 {...register("firstName", { required: true })}
                             />
@@ -41,8 +41,8 @@ const SignUp = () => {
                             <Form.Label>Last Name</Form.Label>
                             <Form.Control
                                 type="text"
+                                size="sm"
                                 autoComplete="none"
-                                placeholder="Last Name"
                                 isInvalid={errors.last_name}
                                 {...register("lastName", { required: true })}
                             />
@@ -52,8 +52,8 @@ const SignUp = () => {
                             <Form.Label>E-mail</Form.Label>
                             <Form.Control
                                 type="text"
+                                size="sm"
                                 autoComplete="none"
-                                placeholder="E-mail"
                                 isInvalid={errors.email}
                                 {...register("email", {
                                     required: true,
@@ -68,8 +68,8 @@ const SignUp = () => {
                             <Form.Label>Password</Form.Label>
                             <Form.Control
                                 type="password"
+                                size="sm"
                                 autoComplete="none"
-                                placeholder="Password"
                                 isInvalid={errors.password}
                                 {...register("password", { required: true })}
                             />
@@ -79,20 +79,20 @@ const SignUp = () => {
                             <Form.Label>Confirm Password</Form.Label>
                             <Form.Control
                                 type="password"
+                                size="sm"
                                 autoComplete="none"
-                                placeholder="Confirm Password"
                                 isInvalid={errors.confirm_password}
                                 {...register("confirmPassword", { required: true })}
                             />
                         </Form.Group>
                         
-                        <Button type="submit">Sign In</Button>
-                    </div>
-
-                    <div className="links">
-                        <p>Already have an account? <Link to="/signin">Sign in</Link>.</p>
+                        <Button size="sm" type="submit">Sign Up</Button>
                     </div>
                 </Form>
+
+                <div className="links">
+                    <p>Already have an account? <Link to="/signin">Sign in</Link>.</p>
+                </div>
             </div>
         </Container>
     )

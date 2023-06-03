@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    background-image: url("./background.jpg");
+    height: 100vh;
+    background-image: url("./background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -11,8 +11,6 @@
 
 .signin-containerbox .cardbox {
     display: flex;
-    margin-top: 15vh;
-    margin-bottom: 20vh;
     width: 400px;
     flex-direction: column;
     align-items: center;
@@ -32,15 +30,16 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-size: 15px;
 }
 
-.signin-containerbox .formbox .links {
+.signin-containerbox .links {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.signin-containerbox .formbox .links p {
+.signin-containerbox .links p {
     margin: 3px;
-    font-size: 14px;
+    font-size: 13px;
 }
