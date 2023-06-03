@@ -1,5 +1,6 @@
 const express = require("express");
 const dotenv = require("dotenv");
+const cors = require("cors");
 
 dotenv.config({ path: "./.env" });
 
@@ -16,6 +17,7 @@ syncDatabase();
 const authRoutes = require("./routes/auth");
 const errorHandler = require("./middlewares/errorHandler");
 
+app.use(cors());
 app.use(express.json());
 
 app.use(httpLogger);
