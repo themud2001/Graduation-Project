@@ -19,10 +19,6 @@ module.exports.signInValidation = async (req, res, next) => {
         .trim()
         .notEmpty()
         .withMessage("Invalid Password")
-        .bail()
-        .isLength({ min: 6 })
-        .withMessage("Password must be 6 characters or longer")
-        .bail()
         .run(req)
 
     const result = validationResult(req);
