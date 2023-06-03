@@ -11,7 +11,6 @@ module.exports.signInValidation = async (req, res, next) => {
         .toLowerCase()
         .isEmail()
         .withMessage("Invalid E-mail format!")
-        .bail()
         .run(req);
     
     await body("password")
