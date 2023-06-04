@@ -5,6 +5,10 @@ module.exports = (err, req, res, next) => {
         return next(err);
     }
 
+    if (err.logMessage) {
+        logger.error(err.logMessage);
+    }
+
     logger.error(err.message);
     res.status(err.code).json({ errorMessage: err.message });
 };

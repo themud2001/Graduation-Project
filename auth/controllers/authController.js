@@ -5,12 +5,12 @@ const User = require("../models/User");
 const HttpError = require("../utils/HttpError");
 
 module.exports.signIn = async (req, res, next) => {
-    const email = req.body.email;
+    const bodyEmail = req.body.email;
     const password = req.body.password;
     const rememberMe = req.body.rememberMe;
 
     try {
-        const user = await User.findOne({ where: { email } });
+        const user = await User.findOne({ where: { email: bodyEmail } });
 
         if (!user) {
             return next(new HttpError(404, ["Account not found"]));
@@ -22,12 +22,13 @@ module.exports.signIn = async (req, res, next) => {
             return next(new HttpError(401, ["Incorrect credentials"]));
         }
 
+        const { firstName, lastName, email, phoneNumber } = user;
         const expiresIn = rememberMe ? process.env.JWT_EXPIRES_IN : "15m";
         const token = jwt.sign({ email }, process.env.JWT_SECRET_KEY, { expiresIn });
 
-        res.status(200).json({ email: user.email, token });
+        res.status(200).json({ firstName, lastName, email, phoneNumber, token });
     } catch (error) {
-        next(new HttpError(500, ["Server error"]));
+        next(new HttpError(500, ["Server error"], error.message));
     }
 };
 
