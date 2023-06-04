@@ -1,4 +1,4 @@
-const { body, validationResult } = require("express-validator");
+const { body, header, validationResult } = require("express-validator");
 const HttpError = require("../utils/HttpError");
 
 module.exports.signInValidation = async (req, res, next) => {
@@ -92,6 +92,27 @@ module.exports.signUpValidation = async (req, res, next) => {
 
     if (!result.isEmpty()) {
         return next(new HttpError(400, errorsArray));
+    }
+
+    next();
+};
+
+module.exports.verifyTokenValidation = async (req, res, next) => {
+    await header("Authorization", "Token not found")
+        .escape()
+        .trim()
+        .notEmpty()
+        .bail()
+        .custom(value => value.startsWith("Bearer") && value.split(" ").length > 1)
+        .run(req);
+
+    const result = validationResult(req);
+    const errorsArray = result
+        .formatWith(error => error.msg)
+        .array()
+    
+    if (!result.isEmpty()) {
+        return next(new HttpError(401, errorsArray));
     }
 
     next();

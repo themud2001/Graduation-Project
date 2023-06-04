@@ -50,3 +50,21 @@ module.exports.signUp = async (req, res, next) => {
         next(new HttpError(409, ["Account already exists"]));
     }
 };
+
+module.exports.verifyToken = async (req, res, next) => {
+    try {
+        const token = req.headers.authorization.split(" ")[1];
+        const decoded = jwt.verify(token, process.env.JWT_SECRET_KEY);
+        const user = await User.findOne({ where: { email: decoded.email } });
+
+        if (!user) {
+            return next(new HttpError(401, ["Invalid token (account not found)"]));
+        }
+
+        const { firstName, lastName, email, phoneNumber } = user;
+
+        res.status(200).json({ firstName, lastName, email, phoneNumber, token });
+    } catch (error) {
+        next(new HttpError(401, ["Invalid token"]));
+    }
+};

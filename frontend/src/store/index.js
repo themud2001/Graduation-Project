@@ -4,7 +4,8 @@ import { setupListeners } from "@reduxjs/toolkit/query";
 import {
     authApi,
     useSignInMutation,
-    useSignUpMutation
+    useSignUpMutation,
+    useVerifyTokenQuery
 } from "./apis/authApi";
 import { authSliceName, authReducer } from "./slices/authSlice";
 
@@ -24,5 +25,6 @@ setupListeners(store.dispatch);
 export {
     store,
     useSignInMutation,
-    useSignUpMutation
+    useSignUpMutation,
+    useVerifyTokenQuery
 };

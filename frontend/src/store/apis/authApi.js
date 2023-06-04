@@ -25,12 +25,22 @@ const authApi = createApi({
                     }
                 }
             }),
+            verifyToken: builder.query({
+                query: token => {
+                    return {
+                        url: "/verify-token",
+                        method: "GET",
+                        headers: { "Authorization": `Bearer ${token}` }
+                    };
+                }
+            })
         }
     }
 });
 
 export const {
     useSignInMutation,
-    useSignUpMutation
+    useSignUpMutation,
+    useVerifyTokenQuery
 } = authApi;
 export { authApi };

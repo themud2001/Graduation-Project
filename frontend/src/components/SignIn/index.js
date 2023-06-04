@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -13,9 +14,14 @@ import "./style.css";
 const SignIn = () => {
     const { register, reset, handleSubmit, formState: { errors } } = useForm();
     const [signIn, { isSuccess, isLoading, isError, error, data }] = useSignInMutation();
+    const { token } = useSelector(state => state.auth);
     const navigate = useNavigate();
 
     useEffect(() => {
+        if (token) {
+            navigate("/");
+        }
+
         if (isSuccess) {
             toast.success("Successfully signed in!");
             reset();
