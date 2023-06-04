@@ -25,7 +25,7 @@ const SignUp = () => {
         if (isError) {
             toast.error(...error.data.errorMessage);
         }
-    }, [isSuccess, isLoading, isError, error]);
+    }, [isSuccess, isLoading, isError, error, navigate, reset]);
 
     const handleFormOnSubmit = formData => {
         signUp(formData);

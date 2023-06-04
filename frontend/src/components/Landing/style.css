@@ -8,19 +8,28 @@
 .mainbox {
     background-image: url("./landing_background.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
 .main {
     display: flex;
+    height: 700px;
     align-items: center;
-    height: 600px;
     padding: 25px;
 }
 
 .main .home-text {
     width: 40%;
+}
+
+.main .home-text .title {
+    font-weight: 900;
+}
+
+.main .home-text button {
+    padding: 10px 20px;
+    font-size: 18px;
 }
 
 .about {

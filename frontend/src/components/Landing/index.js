@@ -22,9 +22,9 @@ const Landing = () => {
                 <Container fluid className="mainbox">
                     <Container id="home" className="main">
                         <div className="home-text">
-                            <h1><span className="text-primary">Lorem ipsum dolor</span> sit amet, consectetur adipiscing elit</h1>
+                            <h1><span className="text-primary title">Lorem ipsum dolor</span> sit amet, consectetur adipiscing elit</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <Button>Order Now</Button>
+                            <Button className="rounded-pill">Order Now</Button>
                         </div>
                     </Container>
                 </Container>

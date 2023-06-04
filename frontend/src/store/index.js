@@ -6,9 +6,11 @@ import {
     useSignInMutation,
     useSignUpMutation
 } from "./apis/authApi";
+import { authSliceName, authReducer } from "./slices/authSlice";
 
 const store = configureStore({
     reducer: {
+        [authSliceName]: authReducer,
         [authApi.reducerPath]: authApi.reducer
     },
     middleware: getDefaultMiddleware => {

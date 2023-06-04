@@ -33,7 +33,7 @@ const Header = () => {
 
                     <Nav className="account">
                         <Link to="/signin" className="btn btn-link sign-in">Sign In</Link>
-                        <Link to="/signup" className="btn btn-primary">Sign Up</Link>
+                        <Link to="/signup" className="btn btn-primary rounded-pill">Sign Up</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
