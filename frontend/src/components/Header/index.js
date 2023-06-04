@@ -1,14 +1,21 @@
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+
+import { signOut } from "../../store";
 
 import "./style.css";
 import logo from "./logo.png";
 
 const Header = () => {
+    const { firstName, lastName } = useSelector(state => state.auth);
+    const dispatch = useDispatch();
+
     return (
         <Navbar expand="lg" className="fixed-top headerbox">
             <Container className="header">
@@ -32,8 +39,26 @@ const Header = () => {
                     </Nav>
 
                     <Nav className="account">
-                        <Link to="/signin" className="btn btn-link sign-in">Sign In</Link>
-                        <Link to="/signup" className="btn btn-primary rounded-pill">Sign Up</Link>
+                        {firstName && lastName ? (
+                            <>
+                                <NavDropdown title={`${firstName} ${lastName}`}>
+                                    <Link className="dropdown-item" to="/profile">
+                                        <i className="bi bi-person-fill" /> My Profile
+                                    </Link>
+
+                                    <NavDropdown.Divider />
+
+                                    <Link className="dropdown-item" onClick={() => dispatch(signOut())}>
+                                        <i className="bi bi-door-closed-fill" /> Sign Out
+                                    </Link>
+                                </NavDropdown>
+                            </>
+                        ) : (
+                            <>
+                                <Link to="/signin" className="btn btn-link sign-in">Sign In</Link>
+                                <Link to="/signup" className="btn btn-primary rounded-pill">Sign Up</Link>
+                            </>
+                        )}
                     </Nav>
                 </Navbar.Collapse>
             </Container>

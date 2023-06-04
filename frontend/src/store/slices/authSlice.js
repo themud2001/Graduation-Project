@@ -11,7 +11,7 @@ const initialState = {
     token
 }
 
-const populateStore = (state, action) => {
+const addToStore = (state, action) => {
     localStorage.setItem("token", action.payload.token);
     state.firstName = action.payload.firstName;
     state.lastName = action.payload.lastName;
@@ -20,23 +20,37 @@ const populateStore = (state, action) => {
     state.token = action.payload.token;
 };
 
+const removeFromStore = (state) => {
+    localStorage.removeItem("token");
+    state.firstName = null;
+    state.lastName = null;
+    state.email = null;
+    state.phoneNumber = null;
+    state.token = null;
+};
+
 const authSlice = createSlice({
     name: "auth",
     initialState,
+    reducers: {
+        signOut: state => {
+            removeFromStore(state);
+        }
+    },
     extraReducers: builder => {
         builder
             .addMatcher(authApi.endpoints.signIn.matchFulfilled, (state, action) => {
-                populateStore(state, action);
+                addToStore(state, action);
             })
             .addMatcher(authApi.endpoints.verifyToken.matchFulfilled, (state, action) => {
-                populateStore(state, action);
+                addToStore(state, action);
             })
             .addMatcher(authApi.endpoints.verifyToken.matchRejected, (state) => {
-                localStorage.removeItem("token");
-                state.token = null;
+                removeFromStore(state);
             });
     }
 });
 
 export const authSliceName = authSlice.name;
+export const { signOut } = authSlice.actions;
 export const authReducer = authSlice.reducer;

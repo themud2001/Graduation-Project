@@ -7,7 +7,7 @@ import {
     useSignUpMutation,
     useVerifyTokenQuery
 } from "./apis/authApi";
-import { authSliceName, authReducer } from "./slices/authSlice";
+import { authSliceName, signOut, authReducer } from "./slices/authSlice";
 
 const store = configureStore({
     reducer: {
@@ -26,5 +26,6 @@ export {
     store,
     useSignInMutation,
     useSignUpMutation,
-    useVerifyTokenQuery
+    useVerifyTokenQuery,
+    signOut
 };
