@@ -14,13 +14,13 @@
 
 .main {
     display: flex;
-    height: 700px;
+    height: 600px;
     align-items: center;
     padding: 25px;
 }
 
 .main .home-text {
-    width: 40%;
+    width: 50%;
 }
 
 .main .home-text .title {
