@@ -1,1 +1,1 @@
-cmd /c "cd auth & node index"
+cmd /c "cd auth & npm run dev"
