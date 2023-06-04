@@ -12,7 +12,7 @@ import "./style.css";
 
 const SignIn = () => {
     const { register, reset, handleSubmit, formState: { errors } } = useForm();
-    const [signIn, { isSuccess, isLoading, isError, error }] = useSignInMutation();
+    const [signIn, { isSuccess, isLoading, isError, error, data }] = useSignInMutation();
     const navigate = useNavigate();
 
     useEffect(() => {

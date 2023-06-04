@@ -19,7 +19,7 @@ const SignUp = () => {
         if (isSuccess) {
             toast.success("Successfully signed up!");
             reset();
-            navigate("/");
+            navigate("/signin");
         }
 
         if (isError) {
