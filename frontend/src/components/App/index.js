@@ -7,6 +7,7 @@ import Header from "../Header";
 import Landing from "../Landing";
 import SignIn from "../SignIn";
 import SignUp from "../SignUp";
+import NotFound from "../NotFound";
 
 const App = () => {
     return (
@@ -19,6 +20,7 @@ const App = () => {
                     <Route path="/" element={<Landing />} />
                     <Route path="/signin" element={<SignIn />} />
                     <Route path="/signup" element={<SignUp />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </Auth>
         </BrowserRouter>
