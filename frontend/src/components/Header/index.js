@@ -41,15 +41,18 @@ const Header = () => {
                     <Nav className="account">
                         {firstName && lastName ? (
                             <>
-                                <NavDropdown title={`${firstName} ${lastName}`}>
+                                <NavDropdown className="options" title={`${firstName} ${lastName}`}>
                                     <Link className="dropdown-item" to="/profile">
-                                        <i className="bi bi-person-fill" /> My Profile
+                                        <i className="bi bi-person" /> My Profile
+                                    </Link>
+                                    <Link className="dropdown-item" to="/orders">
+                                        <i className="bi bi-clock" /> My Orders
                                     </Link>
 
                                     <NavDropdown.Divider />
 
                                     <Link className="dropdown-item" onClick={() => dispatch(signOut())}>
-                                        <i className="bi bi-door-closed-fill" /> Sign Out
+                                        <i className="bi bi-box-arrow-right" /> Sign Out
                                     </Link>
                                 </NavDropdown>
                             </>

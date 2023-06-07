@@ -32,6 +32,11 @@
     gap: 5px;
 }
 
+.headerbox .header .account .options .bi {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
 .headerbox .header .account .sign-in {
     text-decoration: none;
 }
