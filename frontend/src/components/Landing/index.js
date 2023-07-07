@@ -1,8 +1,8 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { Link } from "react-router-dom";
 
 import "./style.css";
 
@@ -24,7 +24,7 @@ const Landing = () => {
                         <div className="home-text">
                             <h1><span className="text-primary title">Lorem ipsum dolor</span> sit amet, consectetur adipiscing elit</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <Button className="rounded-pill">Order Now</Button>
+                            <Link to="/order" className="btn btn-primary rounded-pill order-now">Order Now</Link>
                         </div>
                     </Container>
                 </Container>
