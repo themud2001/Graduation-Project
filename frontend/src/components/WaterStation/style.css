@@ -31,6 +31,17 @@
     align-items: center;
 }
 
+.wrapper-containerbox .water-station-containerbox .products-reviews-containerbox .products-reviews-tab.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
 .wrapper-containerbox .water-station-containerbox .products-reviews-containerbox .products-reviews-tab .price-cart-box .add-to-cart-btn {
     font-size: 30px;
+}
+
+.wrapper-containerbox .water-station-containerbox .products-reviews-containerbox .products-reviews-tab .review-box .footer .info {
+    display: flex;
+    gap: 25px;
 }

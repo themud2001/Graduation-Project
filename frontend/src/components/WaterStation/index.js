@@ -57,12 +57,140 @@ const WaterStation = () => {
                                     </Card>
                                 </Col>
 
-                                
+                                <Col xl={3} md={6} xs={12}>
+                                    <Card className="shadow-sm">
+                                        <Card.Img src={logo} />
+
+                                        <Card.Body>
+                                            <h3>Test</h3>
+
+                                            <div className="price-cart-box">
+                                                <span>4.55 JOD</span>
+                                                <Link to={`/water-stations/${1}`} className="bi bi-cart-plus-fill add-to-cart-btn"></Link>
+                                            </div>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+
+                                <Col xl={3} md={6} xs={12}>
+                                    <Card className="shadow-sm">
+                                        <Card.Img src={logo} />
+
+                                        <Card.Body>
+                                            <h3>Test</h3>
+
+                                            <div className="price-cart-box">
+                                                <span>4.55 JOD</span>
+                                                <Link to={`/water-stations/${1}`} className="bi bi-cart-plus-fill add-to-cart-btn"></Link>
+                                            </div>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+
+                                <Col xl={3} md={6} xs={12}>
+                                    <Card className="shadow-sm">
+                                        <Card.Img src={logo} />
+
+                                        <Card.Body>
+                                            <h3>Test</h3>
+
+                                            <div className="price-cart-box">
+                                                <span>4.55 JOD</span>
+                                                <Link to={`/water-stations/${1}`} className="bi bi-cart-plus-fill add-to-cart-btn"></Link>
+                                            </div>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+
+                                <Col xl={3} md={6} xs={12}>
+                                    <Card className="shadow-sm">
+                                        <Card.Img src={logo} />
+
+                                        <Card.Body>
+                                            <h3>Test</h3>
+
+                                            <div className="price-cart-box">
+                                                <span>4.55 JOD</span>
+                                                <Link to={`/water-stations/${1}`} className="bi bi-cart-plus-fill add-to-cart-btn"></Link>
+                                            </div>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
                             </Row>
                         </Tab>
 
-                        <Tab className="products-reviews-tab" eventKey="reviews" title="Reviews">
-                            Test2
+                        <Tab className="products-reviews-tab reviews-list" eventKey="reviews" title="Reviews">
+                            <Card className="shadow-sm">
+                                <Row className="review-box">
+                                    <Col xs={12}>
+                                        <Card.Body>
+                                            <h3>Test</h3>
+
+                                            <hr />
+
+                                            <Card.Text>
+                                                Some quick example text to build on the card title and make up the
+                                                bulk of the card's content.
+                                            </Card.Text>
+
+                                            <Row className="footer">
+                                                <Col xs={12} className="info">
+                                                    <div><i className="bi bi-star-fill" /> 4/5</div>
+                                                    <div><i className="bi bi-calendar-week-fill" /> 1/1/1991</div>
+                                                </Col>
+                                            </Row>
+                                        </Card.Body>
+                                    </Col>
+                                </Row>
+                            </Card>
+
+                            <Card className="shadow-sm">
+                                <Row className="review-box">
+                                    <Col xs={12}>
+                                        <Card.Body>
+                                            <h3>Test</h3>
+
+                                            <hr />
+
+                                            <Card.Text>
+                                                Some quick example text to build on the card title and make up the
+                                                bulk of the card's content.
+                                            </Card.Text>
+
+                                            <Row className="footer">
+                                                <Col xs={12} className="info">
+                                                    <div><i className="bi bi-star-fill" /> 4/5</div>
+                                                    <div><i className="bi bi-calendar-week-fill" /> 1/1/1991</div>
+                                                </Col>
+                                            </Row>
+                                        </Card.Body>
+                                    </Col>
+                                </Row>
+                            </Card>
+
+                            <Card className="shadow-sm">
+                                <Row className="review-box">
+                                    <Col xs={12}>
+                                        <Card.Body>
+                                            <h3>Test</h3>
+
+                                            <hr />
+
+                                            <Card.Text>
+                                                Some quick example text to build on the card title and make up the
+                                                bulk of the card's content.
+                                            </Card.Text>
+
+                                            <Row className="footer">
+                                                <Col xs={12} className="info">
+                                                    <div><i className="bi bi-star-fill" /> 4/5</div>
+                                                    <div><i className="bi bi-calendar-week-fill" /> 1/1/1991</div>
+                                                </Col>
+                                            </Row>
+                                        </Card.Body>
+                                    </Col>
+                                </Row>
+                            </Card>
                         </Tab>
                     </Tabs>
                 </div>
