@@ -1,4 +1,4 @@
-.order-containerbox {
+.wrapper-containerbox {
     display: flex;
     justify-content: center;
     padding: 100px 25px 100px 25px;
@@ -9,7 +9,7 @@
     background-position: center;
 }
 
-.order-containerbox .water-stations-containerbox {
+.wrapper-containerbox .water-stations-containerbox {
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -19,32 +19,32 @@
     height: 100%;
 }
 
-.order-containerbox .water-stations-containerbox .searchbox {
+.wrapper-containerbox .water-stations-containerbox .searchbox {
     display: flex;
     justify-content: flex-end;
 }
 
-.order-containerbox .water-stations-containerbox .water-stations-listbox {
+.wrapper-containerbox .water-stations-containerbox .water-stations-listbox {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
-.order-containerbox .water-stations-containerbox .water-stations-listbox .card .footer {
+.wrapper-containerbox .water-stations-containerbox .water-stations-listbox .card .footer {
     display: flex;
     justify-content: space-between;
 }
 
-.order-containerbox .water-stations-containerbox .water-stations-listbox .card .footer .info {
+.wrapper-containerbox .water-stations-containerbox .water-stations-listbox .card .footer .info {
     display: flex;
     gap: 25px;
 }
 
-.order-containerbox .water-stations-containerbox .water-stations-listbox .card .footer .viewbox {
+.wrapper-containerbox .water-stations-containerbox .water-stations-listbox .card .footer .viewbox {
     display: flex;
     justify-content: flex-end;
 }
 
-.order-containerbox .water-stations-containerbox .water-stations-listbox .card .footer .viewbox .view-button {
+.wrapper-containerbox .water-stations-containerbox .water-stations-listbox .card .footer .viewbox .view-button {
     width: 100%;
 }

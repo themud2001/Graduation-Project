@@ -24,7 +24,7 @@ const Landing = () => {
                         <div className="home-text">
                             <h1><span className="text-primary title">Lorem ipsum dolor</span> sit amet, consectetur adipiscing elit</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <Link to="/order" className="btn btn-primary rounded-pill order-now">Order Now</Link>
+                            <Link to="/water-stations" className="btn btn-primary rounded-pill order-now">Order Now</Link>
                         </div>
                     </Container>
                 </Container>

@@ -1,0 +1,36 @@
+.wrapper-containerbox {
+    display: flex;
+    justify-content: center;
+    padding: 100px 25px 100px 25px;
+    min-height: 100vh;
+    background-image: url("./background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper-containerbox .water-station-containerbox {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+    border-radius: 15px;
+    background-color: #FFF;
+    height: 100%;
+}
+
+.wrapper-containerbox .water-station-containerbox .products-reviews-containerbox .products-reviews-tab {
+    border: 1px solid #dee2e6;
+    border-top: 0px;
+    padding: 25px;
+}
+
+.wrapper-containerbox .water-station-containerbox .products-reviews-containerbox .products-reviews-tab .price-cart-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-containerbox .water-station-containerbox .products-reviews-containerbox .products-reviews-tab .price-cart-box .add-to-cart-btn {
+    font-size: 30px;
+}

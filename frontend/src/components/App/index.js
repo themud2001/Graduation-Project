@@ -6,6 +6,7 @@ import Auth from "../Auth";
 import Header from "../Header";
 import Landing from "../Landing";
 import WaterStationsList from "../WaterStationsList";
+import WaterStation from "../WaterStation";
 import SignIn from "../SignIn";
 import SignUp from "../SignUp";
 import NotFound from "../NotFound";
@@ -19,7 +20,8 @@ const App = () => {
 
                 <Routes>
                     <Route path="/" element={<Landing />} />
-                    <Route path="/order" element={<WaterStationsList />} />
+                    <Route path="/water-stations" element={<WaterStationsList />} />
+                    <Route path="/water-stations/:id" element={<WaterStation />} />
                     <Route path="/signin" element={<SignIn />} />
                     <Route path="/signup" element={<SignUp />} />
                     <Route path="*" element={<NotFound />} />

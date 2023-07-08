@@ -13,7 +13,7 @@ import logo from "./test.png";
 
 const WaterStationsList = () => {
     return (
-        <Container fluid className="order-containerbox">
+        <Container fluid className="wrapper-containerbox">
             <Container className="water-stations-containerbox shadow">
                 <Row className="searchbox">
                     <Col lg={8} xs={12}>
@@ -59,7 +59,7 @@ const WaterStationsList = () => {
                                         </Col>
 
                                         <Col lg={2} xs={12} className="viewbox">
-                                            <Link to="/order?id=2" className="btn btn-primary rounded-pill view-button">View Products</Link>
+                                            <Link to={`/water-stations/${1}`} className="btn btn-primary rounded-pill view-button">View Products</Link>
                                         </Col>
                                     </Row>
                                 </Card.Body>
