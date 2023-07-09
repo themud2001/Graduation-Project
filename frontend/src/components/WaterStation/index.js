@@ -46,7 +46,7 @@ const WaterStation = () => {
                             <ProductsList />
                         </Tab>
 
-                        <Tab className="products-reviews-tab reviews-list" eventKey="reviews" title="Reviews">
+                        <Tab className="products-reviews-tab" eventKey="reviews" title="Reviews">
                             <ReviewsList />
                         </Tab>
                     </Tabs>

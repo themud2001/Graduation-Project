@@ -7,7 +7,7 @@ import "./style.css";
 
 const ReviewsList = () => {
     return (
-        <>
+        <div className="reviews-list-container">
             <Card className="shadow-sm">
                 <Row className="review-box">
                     <Col xs={12}>
@@ -79,7 +79,7 @@ const ReviewsList = () => {
                     </Col>
                 </Row>
             </Card>
-        </>
+        </div>
     );
 };
 

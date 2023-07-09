@@ -1,4 +1,4 @@
-.wrapper-containerbox .water-station-containerbox .products-reviews-containerbox .products-reviews-tab.reviews-list {
+.wrapper-containerbox .water-station-containerbox .products-reviews-containerbox .products-reviews-tab .reviews-list-container {
     display: flex;
     flex-direction: column;
     gap: 25px;
