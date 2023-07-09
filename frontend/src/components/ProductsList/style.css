@@ -1,0 +1,9 @@
+.wrapper-containerbox .water-station-containerbox .products-reviews-containerbox .products-reviews-tab .price-cart-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-containerbox .water-station-containerbox .products-reviews-containerbox .products-reviews-tab .price-cart-box .add-to-cart-btn {
+    font-size: 30px;
+}
