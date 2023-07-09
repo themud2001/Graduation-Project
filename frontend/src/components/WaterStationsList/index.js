@@ -28,7 +28,7 @@ const WaterStationsList = () => {
                                     size="sm"
                                 />
 
-                                <Button><i className="bi bi-search" /></Button>
+                                <Button type="submit" size="sm"><i className="bi bi-search" /></Button>
                             </InputGroup>
                         </Form>
                     </Col>
@@ -59,7 +59,7 @@ const WaterStationsList = () => {
                                         </Col>
 
                                         <Col lg={2} xs={12} className="viewbox">
-                                            <Link to={`/water-stations/${1}`} className="btn btn-primary rounded-pill view-button">View Products</Link>
+                                            <Link to={`/water-stations/${1}`} className="btn btn-primary btn-sm rounded-pill view-button">View Products</Link>
                                         </Col>
                                     </Row>
                                 </Card.Body>

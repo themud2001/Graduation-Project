@@ -1,0 +1,14 @@
+.write-review-link {
+    padding: 0;
+}
+
+.modal-title-icon {
+    color: #ffd700;
+}
+
+.rating-description-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px;
+}

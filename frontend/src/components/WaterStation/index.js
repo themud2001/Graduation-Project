@@ -2,12 +2,12 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Link } from "react-router-dom";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 
 import ProductsList from "../ProductsList";
 import ReviewsList from "../ReviewsList";
+import ReviewBox from "../ReviewBox";
 
 import "./style.css";
 import logo from "./test.png";
@@ -32,7 +32,7 @@ const WaterStation = () => {
                                 bulk of the card's content.
                             </p>
 
-                            <Link to={`/rate/${1}`}>Write a review</Link>
+                            <ReviewBox />
                         </Col>
                     </Row>
                 </div>
@@ -51,7 +51,7 @@ const WaterStation = () => {
                         </Tab>
                     </Tabs>
                 </div>
-            </Container> 
+            </Container>
         </Container>
     );
 };
